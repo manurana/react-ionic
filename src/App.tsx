@@ -10,6 +10,10 @@ import "./App.css";
 import Signin from "./pages/Signin/Signin";
 import * as ROUTES from "./constants/routes";
 
+// Ionic 4 styles
+import "@ionic/core/css/core.css";
+import "@ionic/core/css/ionic.bundle.css";
+
 const App: React.FC = () => {
   return (
     <Router>
