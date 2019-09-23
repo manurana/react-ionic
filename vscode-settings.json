@@ -1,0 +1,48 @@
+{
+  // Support using flow through your node_modules folder, WARNING: Checking this box is a security risk. When you open a project we will immediately run code contained within it.
+  "flow.useNPMPackagedFlow": true,
+  // Enable/disable JavaScript validation. (For Flow)
+  "javascript.validate.enable": false,
+  // Enable/disable default JavaScript/Typescript formatter (For Prettier)
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  // This is the new setting recommended by prettier-vscode instead of "prettier.eslintIntegration": true
+  // https://github.com/prettier/prettier-vscode#vscode-eslint-and-tslint-integration
+  "eslint.autoFixOnSave": true,
+  // only work with js and jsx files
+  // https://dorshinar.me/linting-your-react+typescript-project-with-eslint-and-prettier
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "eslint.packageManager": "yarn"
+  // "eslint.runtime": "/Users/manu/.nvm/versions/node/v10.16.3/bin/node"
+  // "eslint.nodePath": "./node_modules/react-scripts/node_modules",
+}
